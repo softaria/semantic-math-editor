@@ -1,6 +1,6 @@
 # semantic-math-editor
 
-ATTENTION - the project is not yet ready. Work in progress.
+ATTENTION - the project publication is not yet ready. Work in progress.
 
 Editing math formulas on the web 
 
