@@ -4,4 +4,4 @@ Editing math formulas on the web
 
 Official site: https://math-editor.com/semanticEditor.html
 
-NPM: 
+NPM: https://www.npmjs.com/package/semantic-math-editor
