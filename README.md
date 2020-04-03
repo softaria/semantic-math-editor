@@ -1,4 +1,4 @@
-# math-editor
+# semantic-math-editor
 
 ATTENTION - the project is not yet ready. Work in progress.
 
