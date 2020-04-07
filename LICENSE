@@ -1,4 +1,4 @@
-MathEditor Free License
+SemanticMathEditor Free License
 
 Copyright (c) 2020, Softaria LLC
 All rights reserved.
@@ -7,7 +7,7 @@ Redistribution and use in binary forms, without modification,
 are permitted provided that the following conditions are met:
 
 1. Each web page, which uses MathEditor contains a visible backlink to our official site https://math-editor.com, 
-   containing either our logo or ‘powered by MathEditor’ text. 
+   containing either our logo or ‘powered by SemanticMathEditor’ text. 
    The link can be placed anywhere on the page. 
    Alternatively, consider buying commercial license (https://math-editor.com/license).
 
@@ -21,10 +21,10 @@ are permitted provided that the following conditions are met:
 
 The product is NOT open source. No decompilation is allowed.
 
-Softaria LLC warrants that it does not include into the distributive of the MathEditor any viruses, miners, malicious code, 
-timers or any code which would intentionally prevent MathEditor from working properly. 
+Softaria LLC warrants that it does not include into the distributive of the SemanticMathEditor any viruses, miners, malicious code,
+timers or any code, which would intentionally prevent SemanticMathEditor from working properly. 
 
-MathEditor does not gather any personal information and does not send anything to the companies or third party servers.
+SemanticMathEditor does not gather any personal information and does not send anything to the companies or third party servers.
 It may only send mathematical expressions to a mathematical server for calculation if that is explicitly configured by you.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
