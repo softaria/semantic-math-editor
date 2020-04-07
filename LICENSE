@@ -1,4 +1,4 @@
-SemanticMathEditor Free License
+Semantic Math Editor Free License
 
 Copyright (c) 2020, Softaria LLC
 All rights reserved.
@@ -6,8 +6,8 @@ All rights reserved.
 Redistribution and use in binary forms, without modification, 
 are permitted provided that the following conditions are met:
 
-1. Each web page, which uses MathEditor contains a visible backlink to our official site https://math-editor.com, 
-   containing either our logo or ‘powered by SemanticMathEditor’ text. 
+1. Each web page, which uses Semantic Math Editor contains a visible backlink to our official site https://math-editor.com, 
+   containing either our logo or ‘powered by Semantic Math Editor’ text. 
    The link can be placed anywhere on the page. 
    Alternatively, consider buying commercial license (https://math-editor.com/license).
 
@@ -21,10 +21,10 @@ are permitted provided that the following conditions are met:
 
 The product is NOT open source. No decompilation is allowed.
 
-Softaria LLC warrants that it does not include into the distributive of the SemanticMathEditor any viruses, miners, malicious code,
-timers or any code, which would intentionally prevent SemanticMathEditor from working properly. 
+Softaria LLC warrants that it does not include into the distributive of the Semantic Math Editor any viruses, miners, malicious code,
+timers or any code, which would intentionally prevent Semantic Math Editor from working properly. 
 
-SemanticMathEditor does not gather any personal information and does not send anything to the companies or third party servers.
+Semantic Math Editor does not gather any personal information and does not send anything to the companies or third party servers.
 It may only send mathematical expressions to a mathematical server for calculation if that is explicitly configured by you.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
@@ -37,4 +37,3 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
