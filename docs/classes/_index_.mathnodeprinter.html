@@ -1,0 +1,1858 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MathNodePrinter | Semantic Math Editor</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Semantic Math Editor</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_index_.html">&quot;index&quot;</a>
+				</li>
+				<li>
+					<a href="_index_.mathnodeprinter.html">MathNodePrinter</a>
+				</li>
+			</ul>
+			<h1>Class MathNodePrinter</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">MathNodePrinter</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/_index_.mathnodevisitor.html" class="tsd-signature-type">MathNodeVisitor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_index_.mathnodeprinter.html#instance" class="tsd-kind-icon">instance</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitabs" class="tsd-kind-icon">visit<wbr>Abs</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitand" class="tsd-kind-icon">visit<wbr>And</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitareaintegral" class="tsd-kind-icon">visit<wbr>Area<wbr>Integral</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitbrackets" class="tsd-kind-icon">visit<wbr>Brackets</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitcomma" class="tsd-kind-icon">visit<wbr>Comma</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitconstant" class="tsd-kind-icon">visit<wbr>Constant</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitdefiniteintegral" class="tsd-kind-icon">visit<wbr>Definite<wbr>Integral</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitderivative" class="tsd-kind-icon">visit<wbr>Derivative</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitdeterminant" class="tsd-kind-icon">visit<wbr>Determinant</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitdifferential" class="tsd-kind-icon">visit<wbr>Differential</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitdivision" class="tsd-kind-icon">visit<wbr>Division</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitemptyset" class="tsd-kind-icon">visit<wbr>Empty<wbr>Set</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitequality" class="tsd-kind-icon">visit<wbr>Equality</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitexpressionset" class="tsd-kind-icon">visit<wbr>Expression<wbr>Set</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitfunction" class="tsd-kind-icon">visit<wbr>Function</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitfunctiondifference" class="tsd-kind-icon">visit<wbr>Function<wbr>Difference</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitimplicitmultiply" class="tsd-kind-icon">visit<wbr>Implicit<wbr>Multiply</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitincludeset" class="tsd-kind-icon">visit<wbr>Include<wbr>Set</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitindefiniteintegral" class="tsd-kind-icon">visit<wbr>Indefinite<wbr>Integral</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitinfimum" class="tsd-kind-icon">visit<wbr>Infimum</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitintersection" class="tsd-kind-icon">visit<wbr>Intersection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitinterval" class="tsd-kind-icon">visit<wbr>Interval</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitleibnizderivative" class="tsd-kind-icon">visit<wbr>Leibniz<wbr>Derivative</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitlimit" class="tsd-kind-icon">visit<wbr>Limit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitlogarithm" class="tsd-kind-icon">visit<wbr>Logarithm</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitmax" class="tsd-kind-icon">visit<wbr>Max</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitmin" class="tsd-kind-icon">visit<wbr>Min</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitminus" class="tsd-kind-icon">visit<wbr>Minus</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitmultiply" class="tsd-kind-icon">visit<wbr>Multiply</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitnaturallogarithm" class="tsd-kind-icon">visit<wbr>Natural<wbr>Logarithm</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitnumber" class="tsd-kind-icon">visit<wbr>Number</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitnumericset" class="tsd-kind-icon">visit<wbr>Numeric<wbr>Set</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitor" class="tsd-kind-icon">visit<wbr>Or</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitparentheses" class="tsd-kind-icon">visit<wbr>Parentheses</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitpiecewisefunction" class="tsd-kind-icon">visit<wbr>Piecewise<wbr>Function</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitplaceholder" class="tsd-kind-icon">visit<wbr>Placeholder</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitplus" class="tsd-kind-icon">visit<wbr>Plus</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitpoint" class="tsd-kind-icon">visit<wbr>Point</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitpower" class="tsd-kind-icon">visit<wbr>Power</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitpredicate" class="tsd-kind-icon">visit<wbr>Predicate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitproduct" class="tsd-kind-icon">visit<wbr>Product</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitrawtext" class="tsd-kind-icon">visit<wbr>Raw<wbr>Text</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitreversedfunction" class="tsd-kind-icon">visit<wbr>Reversed<wbr>Function</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitroot" class="tsd-kind-icon">visit<wbr>Root</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitset" class="tsd-kind-icon">visit<wbr>Set</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitsquareroot" class="tsd-kind-icon">visit<wbr>Square<wbr>Root</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitsubindex" class="tsd-kind-icon">visit<wbr>Sub<wbr>Index</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitsum" class="tsd-kind-icon">visit<wbr>Sum</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitsupremum" class="tsd-kind-icon">visit<wbr>Supremum</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitsymbol" class="tsd-kind-icon">visit<wbr>Symbol</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitsystemofequations" class="tsd-kind-icon">visit<wbr>System<wbr>OfEquations</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visittransformation" class="tsd-kind-icon">visit<wbr>Transformation</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visittrigonometricfunction" class="tsd-kind-icon">visit<wbr>Trigonometric<wbr>Function</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitunaryminus" class="tsd-kind-icon">visit<wbr>Unary<wbr>Minus</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitundefined" class="tsd-kind-icon">visit<wbr>Undefined</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitunion" class="tsd-kind-icon">visit<wbr>Union</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitvariable" class="tsd-kind-icon">visit<wbr>Variable</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_index_.mathnodeprinter.html#visitverticalbar" class="tsd-kind-icon">visit<wbr>Vertical<wbr>Bar</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="instance" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> instance</h3>
+					<div class="tsd-signature tsd-kind-icon">instance<span class="tsd-signature-symbol">:</span> <a href="_index_.mathnodeprinter.html" class="tsd-signature-type">MathNodePrinter</a><span class="tsd-signature-symbol"> = new MathNodePrinter()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in premium-edition/api/util/math-node-print.ts:67</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitabs" class="tsd-anchor"></a>
+					<h3>visit<wbr>Abs</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Abs<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathabs.html" class="tsd-signature-type">MathAbs</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitabs">visitAbs</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:72</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathabs.html" class="tsd-signature-type">MathAbs</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitand" class="tsd-anchor"></a>
+					<h3>visit<wbr>And</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>And<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathand.html" class="tsd-signature-type">MathAnd</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitand">visitAnd</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:76</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathand.html" class="tsd-signature-type">MathAnd</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitareaintegral" class="tsd-anchor"></a>
+					<h3>visit<wbr>Area<wbr>Integral</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Area<wbr>Integral<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathareaintegral.html" class="tsd-signature-type">MathAreaIntegral</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitareaintegral">visitAreaIntegral</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:80</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathareaintegral.html" class="tsd-signature-type">MathAreaIntegral</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitbrackets" class="tsd-anchor"></a>
+					<h3>visit<wbr>Brackets</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Brackets<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathbrackets.html" class="tsd-signature-type">MathBrackets</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitbrackets">visitBrackets</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:87</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathbrackets.html" class="tsd-signature-type">MathBrackets</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitcomma" class="tsd-anchor"></a>
+					<h3>visit<wbr>Comma</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Comma<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathcomma.html" class="tsd-signature-type">MathComma</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitcomma">visitComma</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:107</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathcomma.html" class="tsd-signature-type">MathComma</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitconstant" class="tsd-anchor"></a>
+					<h3>visit<wbr>Constant</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Constant<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathconstant.html" class="tsd-signature-type">MathConstant</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitconstant">visitConstant</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:111</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathconstant.html" class="tsd-signature-type">MathConstant</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitdefiniteintegral" class="tsd-anchor"></a>
+					<h3>visit<wbr>Definite<wbr>Integral</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Definite<wbr>Integral<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathdefiniteintegral.html" class="tsd-signature-type">MathDefiniteIntegral</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitdefiniteintegral">visitDefiniteIntegral</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:115</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathdefiniteintegral.html" class="tsd-signature-type">MathDefiniteIntegral</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitderivative" class="tsd-anchor"></a>
+					<h3>visit<wbr>Derivative</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Derivative<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathderivative.html" class="tsd-signature-type">MathDerivative</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitderivative">visitDerivative</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:123</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathderivative.html" class="tsd-signature-type">MathDerivative</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitdeterminant" class="tsd-anchor"></a>
+					<h3>visit<wbr>Determinant</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Determinant<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathdeterminant.html" class="tsd-signature-type">MathDeterminant</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitdeterminant">visitDeterminant</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:129</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathdeterminant.html" class="tsd-signature-type">MathDeterminant</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitdifferential" class="tsd-anchor"></a>
+					<h3>visit<wbr>Differential</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Differential<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathdifferential.html" class="tsd-signature-type">MathDifferential</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitdifferential">visitDifferential</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:138</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathdifferential.html" class="tsd-signature-type">MathDifferential</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitdivision" class="tsd-anchor"></a>
+					<h3>visit<wbr>Division</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Division<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathdivision.html" class="tsd-signature-type">MathDivision</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitdivision">visitDivision</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:142</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathdivision.html" class="tsd-signature-type">MathDivision</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitemptyset" class="tsd-anchor"></a>
+					<h3>visit<wbr>Empty<wbr>Set</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Empty<wbr>Set<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathemptyset.html" class="tsd-signature-type">MathEmptySet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitemptyset">visitEmptySet</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:146</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathemptyset.html" class="tsd-signature-type">MathEmptySet</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitequality" class="tsd-anchor"></a>
+					<h3>visit<wbr>Equality</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Equality<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathequality.html" class="tsd-signature-type">MathEquality</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitequality">visitEquality</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:150</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathequality.html" class="tsd-signature-type">MathEquality</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitexpressionset" class="tsd-anchor"></a>
+					<h3>visit<wbr>Expression<wbr>Set</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Expression<wbr>Set<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathexpressionset.html" class="tsd-signature-type">MathExpressionSet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitexpressionset">visitExpressionSet</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:154</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathexpressionset.html" class="tsd-signature-type">MathExpressionSet</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitfunction" class="tsd-anchor"></a>
+					<h3>visit<wbr>Function</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Function<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathfunction.html" class="tsd-signature-type">MathFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitfunction">visitFunction</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:158</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathfunction.html" class="tsd-signature-type">MathFunction</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitfunctiondifference" class="tsd-anchor"></a>
+					<h3>visit<wbr>Function<wbr>Difference</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Function<wbr>Difference<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathfunctiondifference.html" class="tsd-signature-type">MathFunctionDifference</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitfunctiondifference">visitFunctionDifference</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:162</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathfunctiondifference.html" class="tsd-signature-type">MathFunctionDifference</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitimplicitmultiply" class="tsd-anchor"></a>
+					<h3>visit<wbr>Implicit<wbr>Multiply</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Implicit<wbr>Multiply<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathimplicitmultiply.html" class="tsd-signature-type">MathImplicitMultiply</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitimplicitmultiply">visitImplicitMultiply</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:170</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathimplicitmultiply.html" class="tsd-signature-type">MathImplicitMultiply</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitincludeset" class="tsd-anchor"></a>
+					<h3>visit<wbr>Include<wbr>Set</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Include<wbr>Set<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathincludeset.html" class="tsd-signature-type">MathIncludeSet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitincludeset">visitIncludeSet</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:174</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathincludeset.html" class="tsd-signature-type">MathIncludeSet</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitindefiniteintegral" class="tsd-anchor"></a>
+					<h3>visit<wbr>Indefinite<wbr>Integral</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Indefinite<wbr>Integral<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathindefiniteintegral.html" class="tsd-signature-type">MathIndefiniteIntegral</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitindefiniteintegral">visitIndefiniteIntegral</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:178</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathindefiniteintegral.html" class="tsd-signature-type">MathIndefiniteIntegral</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitinfimum" class="tsd-anchor"></a>
+					<h3>visit<wbr>Infimum</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Infimum<span class="tsd-signature-symbol">(</span>mathInfimum<span class="tsd-signature-symbol">: </span><a href="_index_.mathinfimum.html" class="tsd-signature-type">MathInfimum</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitinfimum">visitInfimum</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:184</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathInfimum: <a href="_index_.mathinfimum.html" class="tsd-signature-type">MathInfimum</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitintersection" class="tsd-anchor"></a>
+					<h3>visit<wbr>Intersection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Intersection<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathintersection.html" class="tsd-signature-type">MathIntersection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitintersection">visitIntersection</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:188</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathintersection.html" class="tsd-signature-type">MathIntersection</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitinterval" class="tsd-anchor"></a>
+					<h3>visit<wbr>Interval</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Interval<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathinterval.html" class="tsd-signature-type">MathInterval</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitinterval">visitInterval</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:192</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathinterval.html" class="tsd-signature-type">MathInterval</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitleibnizderivative" class="tsd-anchor"></a>
+					<h3>visit<wbr>Leibniz<wbr>Derivative</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Leibniz<wbr>Derivative<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathleibnizderivative.html" class="tsd-signature-type">MathLeibnizDerivative</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitleibnizderivative">visitLeibnizDerivative</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:212</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathleibnizderivative.html" class="tsd-signature-type">MathLeibnizDerivative</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitlimit" class="tsd-anchor"></a>
+					<h3>visit<wbr>Limit</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Limit<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathlimit.html" class="tsd-signature-type">MathLimit</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitlimit">visitLimit</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:219</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathlimit.html" class="tsd-signature-type">MathLimit</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitlogarithm" class="tsd-anchor"></a>
+					<h3>visit<wbr>Logarithm</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Logarithm<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathlogarithm.html" class="tsd-signature-type">MathLogarithm</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitlogarithm">visitLogarithm</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:225</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathlogarithm.html" class="tsd-signature-type">MathLogarithm</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitmax" class="tsd-anchor"></a>
+					<h3>visit<wbr>Max</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Max<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathmax.html" class="tsd-signature-type">MathMax</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitmax">visitMax</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:231</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathmax.html" class="tsd-signature-type">MathMax</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitmin" class="tsd-anchor"></a>
+					<h3>visit<wbr>Min</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Min<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathmin.html" class="tsd-signature-type">MathMin</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitmin">visitMin</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:235</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathmin.html" class="tsd-signature-type">MathMin</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitminus" class="tsd-anchor"></a>
+					<h3>visit<wbr>Minus</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Minus<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathminus.html" class="tsd-signature-type">MathMinus</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitminus">visitMinus</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:239</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathminus.html" class="tsd-signature-type">MathMinus</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitmultiply" class="tsd-anchor"></a>
+					<h3>visit<wbr>Multiply</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Multiply<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathmultiply.html" class="tsd-signature-type">MathMultiply</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitmultiply">visitMultiply</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:243</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathmultiply.html" class="tsd-signature-type">MathMultiply</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitnaturallogarithm" class="tsd-anchor"></a>
+					<h3>visit<wbr>Natural<wbr>Logarithm</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Natural<wbr>Logarithm<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathnaturallogarithm.html" class="tsd-signature-type">MathNaturalLogarithm</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitnaturallogarithm">visitNaturalLogarithm</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:247</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathnaturallogarithm.html" class="tsd-signature-type">MathNaturalLogarithm</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitnumber" class="tsd-anchor"></a>
+					<h3>visit<wbr>Number</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Number<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathnumber.html" class="tsd-signature-type">MathNumber</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitnumber">visitNumber</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:252</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathnumber.html" class="tsd-signature-type">MathNumber</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitnumericset" class="tsd-anchor"></a>
+					<h3>visit<wbr>Numeric<wbr>Set</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Numeric<wbr>Set<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathnumericset.html" class="tsd-signature-type">MathNumericSet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitnumericset">visitNumericSet</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:256</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathnumericset.html" class="tsd-signature-type">MathNumericSet</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitor" class="tsd-anchor"></a>
+					<h3>visit<wbr>Or</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Or<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathor.html" class="tsd-signature-type">MathOr</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitor">visitOr</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:260</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathor.html" class="tsd-signature-type">MathOr</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitparentheses" class="tsd-anchor"></a>
+					<h3>visit<wbr>Parentheses</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Parentheses<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathparentheses.html" class="tsd-signature-type">MathParentheses</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitparentheses">visitParentheses</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:264</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathparentheses.html" class="tsd-signature-type">MathParentheses</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitpiecewisefunction" class="tsd-anchor"></a>
+					<h3>visit<wbr>Piecewise<wbr>Function</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Piecewise<wbr>Function<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathpiecewisefunction.html" class="tsd-signature-type">MathPiecewiseFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitpiecewisefunction">visitPiecewiseFunction</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:268</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathpiecewisefunction.html" class="tsd-signature-type">MathPiecewiseFunction</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitplaceholder" class="tsd-anchor"></a>
+					<h3>visit<wbr>Placeholder</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Placeholder<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathplaceholder.html" class="tsd-signature-type">MathPlaceholder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitplaceholder">visitPlaceholder</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:276</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathplaceholder.html" class="tsd-signature-type">MathPlaceholder</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitplus" class="tsd-anchor"></a>
+					<h3>visit<wbr>Plus</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Plus<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathplus.html" class="tsd-signature-type">MathPlus</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitplus">visitPlus</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:280</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathplus.html" class="tsd-signature-type">MathPlus</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitpoint" class="tsd-anchor"></a>
+					<h3>visit<wbr>Point</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Point<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathpoint.html" class="tsd-signature-type">MathPoint</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitpoint">visitPoint</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:312</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathpoint.html" class="tsd-signature-type">MathPoint</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitpower" class="tsd-anchor"></a>
+					<h3>visit<wbr>Power</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Power<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathpower.html" class="tsd-signature-type">MathPower</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitpower">visitPower</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:284</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathpower.html" class="tsd-signature-type">MathPower</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitpredicate" class="tsd-anchor"></a>
+					<h3>visit<wbr>Predicate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Predicate<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathpredicate.html" class="tsd-signature-type">MathPredicate</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitpredicate">visitPredicate</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:288</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathpredicate.html" class="tsd-signature-type">MathPredicate</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitproduct" class="tsd-anchor"></a>
+					<h3>visit<wbr>Product</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Product<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathproduct.html" class="tsd-signature-type">MathProduct</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitproduct">visitProduct</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:292</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathproduct.html" class="tsd-signature-type">MathProduct</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitrawtext" class="tsd-anchor"></a>
+					<h3>visit<wbr>Raw<wbr>Text</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Raw<wbr>Text<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathrawtext.html" class="tsd-signature-type">MathRawText</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitrawtext">visitRawText</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:300</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathrawtext.html" class="tsd-signature-type">MathRawText</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitreversedfunction" class="tsd-anchor"></a>
+					<h3>visit<wbr>Reversed<wbr>Function</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Reversed<wbr>Function<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathreversedfunction.html" class="tsd-signature-type">MathReversedFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitreversedfunction">visitReversedFunction</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:304</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathreversedfunction.html" class="tsd-signature-type">MathReversedFunction</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitroot" class="tsd-anchor"></a>
+					<h3>visit<wbr>Root</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Root<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathroot.html" class="tsd-signature-type">MathRoot</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitroot">visitRoot</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:308</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathroot.html" class="tsd-signature-type">MathRoot</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitset" class="tsd-anchor"></a>
+					<h3>visit<wbr>Set</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Set<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathset.html" class="tsd-signature-type">MathSet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitset">visitSet</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:316</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathset.html" class="tsd-signature-type">MathSet</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitsquareroot" class="tsd-anchor"></a>
+					<h3>visit<wbr>Square<wbr>Root</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Square<wbr>Root<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathsquareroot.html" class="tsd-signature-type">MathSquareRoot</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitsquareroot">visitSquareRoot</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:320</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathsquareroot.html" class="tsd-signature-type">MathSquareRoot</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitsubindex" class="tsd-anchor"></a>
+					<h3>visit<wbr>Sub<wbr>Index</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Sub<wbr>Index<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathsubindex.html" class="tsd-signature-type">MathSubIndex</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitsubindex">visitSubIndex</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:324</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathsubindex.html" class="tsd-signature-type">MathSubIndex</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitsum" class="tsd-anchor"></a>
+					<h3>visit<wbr>Sum</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Sum<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathsum.html" class="tsd-signature-type">MathSum</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitsum">visitSum</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:328</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathsum.html" class="tsd-signature-type">MathSum</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitsupremum" class="tsd-anchor"></a>
+					<h3>visit<wbr>Supremum</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Supremum<span class="tsd-signature-symbol">(</span>mathSupremum<span class="tsd-signature-symbol">: </span><a href="_index_.mathsupremum.html" class="tsd-signature-type">MathSupremum</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitsupremum">visitSupremum</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:336</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathSupremum: <a href="_index_.mathsupremum.html" class="tsd-signature-type">MathSupremum</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitsymbol" class="tsd-anchor"></a>
+					<h3>visit<wbr>Symbol</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Symbol<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathsymbol.html" class="tsd-signature-type">MathSymbol</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitsymbol">visitSymbol</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:340</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathsymbol.html" class="tsd-signature-type">MathSymbol</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitsystemofequations" class="tsd-anchor"></a>
+					<h3>visit<wbr>System<wbr>OfEquations</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>System<wbr>OfEquations<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathsystemofequations.html" class="tsd-signature-type">MathSystemOfEquations</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitsystemofequations">visitSystemOfEquations</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:344</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathsystemofequations.html" class="tsd-signature-type">MathSystemOfEquations</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visittransformation" class="tsd-anchor"></a>
+					<h3>visit<wbr>Transformation</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Transformation<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathtransformation.html" class="tsd-signature-type">MathTransformation</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visittransformation">visitTransformation</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:350</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathtransformation.html" class="tsd-signature-type">MathTransformation</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visittrigonometricfunction" class="tsd-anchor"></a>
+					<h3>visit<wbr>Trigonometric<wbr>Function</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Trigonometric<wbr>Function<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathtrigonometricfunction.html" class="tsd-signature-type">MathTrigonometricFunction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visittrigonometricfunction">visitTrigonometricFunction</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:354</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathtrigonometricfunction.html" class="tsd-signature-type">MathTrigonometricFunction</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitunaryminus" class="tsd-anchor"></a>
+					<h3>visit<wbr>Unary<wbr>Minus</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Unary<wbr>Minus<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathunaryminus.html" class="tsd-signature-type">MathUnaryMinus</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitunaryminus">visitUnaryMinus</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:358</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathunaryminus.html" class="tsd-signature-type">MathUnaryMinus</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitundefined" class="tsd-anchor"></a>
+					<h3>visit<wbr>Undefined</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Undefined<span class="tsd-signature-symbol">(</span>mathUndef<span class="tsd-signature-symbol">: </span><a href="_index_.mathundefined.html" class="tsd-signature-type">MathUndefined</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitundefined">visitUndefined</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:362</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathUndef: <a href="_index_.mathundefined.html" class="tsd-signature-type">MathUndefined</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitunion" class="tsd-anchor"></a>
+					<h3>visit<wbr>Union</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Union<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathunion.html" class="tsd-signature-type">MathUnion</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitunion">visitUnion</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:366</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathunion.html" class="tsd-signature-type">MathUnion</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitvariable" class="tsd-anchor"></a>
+					<h3>visit<wbr>Variable</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Variable<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathvariable.html" class="tsd-signature-type">MathVariable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitvariable">visitVariable</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:370</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathvariable.html" class="tsd-signature-type">MathVariable</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="visitverticalbar" class="tsd-anchor"></a>
+					<h3>visit<wbr>Vertical<wbr>Bar</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">visit<wbr>Vertical<wbr>Bar<span class="tsd-signature-symbol">(</span>mathNode<span class="tsd-signature-symbol">: </span><a href="_index_.mathverticalbar.html" class="tsd-signature-type">MathVerticalBar</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_index_.mathnodevisitor.html">MathNodeVisitor</a>.<a href="../interfaces/_index_.mathnodevisitor.html#visitverticalbar">visitVerticalBar</a></p>
+								<ul>
+									<li>Defined in premium-edition/api/util/math-node-print.ts:379</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mathNode: <a href="_index_.mathverticalbar.html" class="tsd-signature-type">MathVerticalBar</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/_index_.html">&quot;index&quot;</a>
+						<ul>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/_index_.heuristics.html">Heuristics</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/_index_.mathtypeguards.html">Math<wbr>Type<wbr>Guards</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/_index_.mathvalidationutils.html">Math<wbr>Validation<wbr>Utils</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/_index_.internal.html">internal</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/_index_.latex.html">latex</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-module">
+								<a href="../modules/_index_.test.html">test</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="_index_.mathnodeprinter.html" class="tsd-kind-icon">Math<wbr>Node<wbr>Printer</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_index_.mathnodeprinter.html#instance" class="tsd-kind-icon">instance</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitabs" class="tsd-kind-icon">visit<wbr>Abs</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitand" class="tsd-kind-icon">visit<wbr>And</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitareaintegral" class="tsd-kind-icon">visit<wbr>Area<wbr>Integral</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitbrackets" class="tsd-kind-icon">visit<wbr>Brackets</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitcomma" class="tsd-kind-icon">visit<wbr>Comma</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitconstant" class="tsd-kind-icon">visit<wbr>Constant</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitdefiniteintegral" class="tsd-kind-icon">visit<wbr>Definite<wbr>Integral</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitderivative" class="tsd-kind-icon">visit<wbr>Derivative</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitdeterminant" class="tsd-kind-icon">visit<wbr>Determinant</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitdifferential" class="tsd-kind-icon">visit<wbr>Differential</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitdivision" class="tsd-kind-icon">visit<wbr>Division</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitemptyset" class="tsd-kind-icon">visit<wbr>Empty<wbr>Set</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitequality" class="tsd-kind-icon">visit<wbr>Equality</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitexpressionset" class="tsd-kind-icon">visit<wbr>Expression<wbr>Set</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitfunction" class="tsd-kind-icon">visit<wbr>Function</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitfunctiondifference" class="tsd-kind-icon">visit<wbr>Function<wbr>Difference</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitimplicitmultiply" class="tsd-kind-icon">visit<wbr>Implicit<wbr>Multiply</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitincludeset" class="tsd-kind-icon">visit<wbr>Include<wbr>Set</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitindefiniteintegral" class="tsd-kind-icon">visit<wbr>Indefinite<wbr>Integral</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitinfimum" class="tsd-kind-icon">visit<wbr>Infimum</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitintersection" class="tsd-kind-icon">visit<wbr>Intersection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitinterval" class="tsd-kind-icon">visit<wbr>Interval</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitleibnizderivative" class="tsd-kind-icon">visit<wbr>Leibniz<wbr>Derivative</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitlimit" class="tsd-kind-icon">visit<wbr>Limit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitlogarithm" class="tsd-kind-icon">visit<wbr>Logarithm</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitmax" class="tsd-kind-icon">visit<wbr>Max</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitmin" class="tsd-kind-icon">visit<wbr>Min</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitminus" class="tsd-kind-icon">visit<wbr>Minus</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitmultiply" class="tsd-kind-icon">visit<wbr>Multiply</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitnaturallogarithm" class="tsd-kind-icon">visit<wbr>Natural<wbr>Logarithm</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitnumber" class="tsd-kind-icon">visit<wbr>Number</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitnumericset" class="tsd-kind-icon">visit<wbr>Numeric<wbr>Set</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitor" class="tsd-kind-icon">visit<wbr>Or</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitparentheses" class="tsd-kind-icon">visit<wbr>Parentheses</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitpiecewisefunction" class="tsd-kind-icon">visit<wbr>Piecewise<wbr>Function</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitplaceholder" class="tsd-kind-icon">visit<wbr>Placeholder</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitplus" class="tsd-kind-icon">visit<wbr>Plus</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitpoint" class="tsd-kind-icon">visit<wbr>Point</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitpower" class="tsd-kind-icon">visit<wbr>Power</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitpredicate" class="tsd-kind-icon">visit<wbr>Predicate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitproduct" class="tsd-kind-icon">visit<wbr>Product</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitrawtext" class="tsd-kind-icon">visit<wbr>Raw<wbr>Text</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitreversedfunction" class="tsd-kind-icon">visit<wbr>Reversed<wbr>Function</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitroot" class="tsd-kind-icon">visit<wbr>Root</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitset" class="tsd-kind-icon">visit<wbr>Set</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitsquareroot" class="tsd-kind-icon">visit<wbr>Square<wbr>Root</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitsubindex" class="tsd-kind-icon">visit<wbr>Sub<wbr>Index</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitsum" class="tsd-kind-icon">visit<wbr>Sum</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitsupremum" class="tsd-kind-icon">visit<wbr>Supremum</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitsymbol" class="tsd-kind-icon">visit<wbr>Symbol</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitsystemofequations" class="tsd-kind-icon">visit<wbr>System<wbr>OfEquations</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visittransformation" class="tsd-kind-icon">visit<wbr>Transformation</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visittrigonometricfunction" class="tsd-kind-icon">visit<wbr>Trigonometric<wbr>Function</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitunaryminus" class="tsd-kind-icon">visit<wbr>Unary<wbr>Minus</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitundefined" class="tsd-kind-icon">visit<wbr>Undefined</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitunion" class="tsd-kind-icon">visit<wbr>Union</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitvariable" class="tsd-kind-icon">visit<wbr>Variable</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_index_.mathnodeprinter.html#visitverticalbar" class="tsd-kind-icon">visit<wbr>Vertical<wbr>Bar</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
