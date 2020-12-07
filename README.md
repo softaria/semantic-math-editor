@@ -59,14 +59,11 @@ The snippet suppose you have a div with id=my-id in your HTML like this:
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css"
           integrity="sha256-uT5rNa8r/qorzlARiO7fTBE7EWQiX/umLlXsq7zyQP8=" crossorigin="anonymous">
-  
-  
-    
+
 </head>
 <body>
    <div id="my-id"/> 
-   
- 
+
 </body>
 ```
 
