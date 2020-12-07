@@ -43,7 +43,7 @@ Getting started:
 *Use from Typescript:*
 
 ```
-import {createEditor} from "semantic-math-editor";
+import {createEditor,MathEditor} from "semantic-math-editor";
 
 const editor = createEditor(document.getElementById('my-id');
 
@@ -70,7 +70,7 @@ The snippet suppose you have a div with id=my-id in your HTML like this:
 </body>
 ```
 
-Developers documentstion:
+Developers documentation:
 
 https://softaria.github.io/semantic-math-editor/
 
