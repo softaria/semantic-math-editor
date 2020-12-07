@@ -70,4 +70,8 @@ The snippet suppose you have a div with id=my-id in your HTML like this:
 </body>
 ```
 
+Developers documentstion:
+
+https://softaria.github.io/semantic-math-editor/
+
 
