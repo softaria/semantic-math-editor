@@ -2372,9 +2372,48 @@ img {
 				<h1>Semantic Math Editor Docs</h1>
 			</a>
 			<p>The development version of the Semantic Math Editor contains compiled code and typescript typings.</p>
+			<p>You can use the editor from typescript, javascript or even directly from HTML pages.</p>
+			<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+				<h2>Installation</h2>
+			</a>
 			<p>It can be installed via NPM:</p>
-			<p>npm i semantic-math-editor</p>
+			<pre><code>npm i semantic-<span class="hljs-keyword">math</span>-editor</code></pre>
+			<a href="#getting-started" id="getting-started" style="color: inherit; text-decoration: none;">
+				<h2>Getting started</h2>
+			</a>
 			<p>All the public API is contained in the semantic-math-editor module.</p>
+			<p>There are three main factory methods:</p>
+			<p><a href="modules/_semantic_math_editor_.html#createeditor">createEditor</a></p>
+			<p><a href="modules/_semantic_math_editor_.html#createrenderableeditor">createRenderableEditor</a></p>
+			<p><a href="modules/_semantic_math_editor_.html#createapi">createAPI</a></p>
+			<p>In most cases you will only need the first one to create editor and bind it to the HTML DOM element.</p>
+			<p>The rest two allow to create editors without binding it to the DOM model.
+			The editors created without the DOM models have limited functionality.</p>
+			<p>The <a href="modules/_semantic_math_editor_.html#createeditor">createEditor</a> functions returns <a href="classes/_semantic_math_editor_.matheditor.html">MathEditor</a> object.</p>
+			<p>You can use it to:</p>
+			<ul>
+				<li>Manipulate the editor via API</li>
+				<li>Subscribe/unsubscribe to the editor&#39;s events</li>
+				<li>Get and set the current math expression from/to the editor in the different formats</li>
+			</ul>
+			<p>So the basic typescript snippet is:</p>
+			<pre><code><span class="hljs-keyword">import</span> {createEditor,MathEditor} <span class="hljs-keyword">from</span> <span class="hljs-string">"semantic-math-editor"</span>;
+
+<span class="hljs-comment">//Get or create HTML element (like div)</span>
+<span class="hljs-keyword">const</span> element = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'my-id'</span>);
+
+<span class="hljs-keyword">const</span> editor = createEditor(element);</code></pre><p>It is important to include several things in the HTML head section.
+			At least include Katex CSS and set charset to UTF-8</p>
+			<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"Content-Type"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"text/html"</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css"</span>
+          <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha256-uT5rNa8r/qorzlARiO7fTBE7EWQiX/umLlXsq7zyQP8="</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span></code></pre>
+			<a href="#further-reading" id="further-reading" style="color: inherit; text-decoration: none;">
+				<h2>Further reading</h2>
+			</a>
 			<p>Please click &quot;semantic-math-editor&quot; link below to read its documentation.</p>
 			<p>Please note that the work on documentation is currently in progress.</p>
 			<p>In case of any question, ask us at <a href="mailto:business@softaria.com">business@softaria.com</a></p>
