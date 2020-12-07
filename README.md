@@ -45,7 +45,7 @@ Getting started:
 ```
 import {createEditor,MathEditor} from "semantic-math-editor";
 
-const editor = createEditor(document.getElementById('my-id');
+const editor = createEditor(document.getElementById('my-id'));
 
 ```
 The snippet suppose you have a div with id=my-id in your HTML like this:
