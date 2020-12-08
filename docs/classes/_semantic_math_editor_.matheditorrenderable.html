@@ -2366,9 +2366,6 @@ img {
 		<li class="current tsd-kind-class tsd-parent-kind-module">
 			<a href="_semantic_math_editor_.matheditorrenderable.html" class="tsd-kind-icon">Math<wbr>Editor<wbr>Renderable</a>
 			<ul>
-				<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-					<a href="_semantic_math_editor_.matheditorrenderable.html#constructor" class="tsd-kind-icon">constructor</a>
-				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a href="_semantic_math_editor_.matheditorrenderable.html#heuristics" class="tsd-kind-icon">heuristics</a>
 				</li>
@@ -2377,6 +2374,9 @@ img {
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a href="_semantic_math_editor_.matheditorrenderable.html#addonupdate" class="tsd-kind-icon">add<wbr>OnUpdate</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a href="_semantic_math_editor_.matheditorrenderable.html#applyadvice" class="tsd-kind-icon">apply<wbr>Advice</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a href="_semantic_math_editor_.matheditorrenderable.html#applyheuristics" class="tsd-kind-icon">apply<wbr>Heuristics</a>
@@ -2404,6 +2404,9 @@ img {
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a href="_semantic_math_editor_.matheditorrenderable.html#dropselection" class="tsd-kind-icon">drop<wbr>Selection</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a href="_semantic_math_editor_.matheditorrenderable.html#getadvices" class="tsd-kind-icon">get<wbr>Advices</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a href="_semantic_math_editor_.matheditorrenderable.html#getcharacterspeech" class="tsd-kind-icon">get<wbr>Character<wbr>Speech</a>
@@ -2518,6 +2521,11 @@ img {
 	<div class="content-wrap">
 		<section class="tsd-panel tsd-comment">
 			<div class="tsd-comment tsd-typography">
+				<div class="lead">
+					<p>Extends <a href="_semantic_math_editor_.matheditorapi.html">MathEditorAPI</a> and renders the expression using using provided renderer.
+						Allows to compute boundaries and render decorations of the expression and its parts.
+					Use <a href="../modules/_semantic_math_editor_.html#createrenderableeditor">createRenderableEditor</a> function to create an instance of this class.</p>
+				</div>
 			</div>
 		</section>
 		<section class="tsd-panel tsd-hierarchy">
@@ -2542,12 +2550,6 @@ img {
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
-					<section class="tsd-index-section ">
-						<h3>Constructors</h3>
-						<ul class="tsd-index-list">
-							<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_semantic_math_editor_.matheditorrenderable.html#constructor" class="tsd-kind-icon">constructor</a></li>
-						</ul>
-					</section>
 					<section class="tsd-index-section tsd-is-inherited">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
@@ -2559,12 +2561,14 @@ img {
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_semantic_math_editor_.matheditorrenderable.html#addonnotify" class="tsd-kind-icon">add<wbr>OnNotify</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_semantic_math_editor_.matheditorrenderable.html#addonupdate" class="tsd-kind-icon">add<wbr>OnUpdate</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_semantic_math_editor_.matheditorrenderable.html#applyadvice" class="tsd-kind-icon">apply<wbr>Advice</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_semantic_math_editor_.matheditorrenderable.html#applyheuristics" class="tsd-kind-icon">apply<wbr>Heuristics</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_semantic_math_editor_.matheditorrenderable.html#copy" class="tsd-kind-icon">copy</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_semantic_math_editor_.matheditorrenderable.html#cut" class="tsd-kind-icon">cut</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_semantic_math_editor_.matheditorrenderable.html#defineeditablecell" class="tsd-kind-icon">define<wbr>Editable<wbr>Cell</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_semantic_math_editor_.matheditorrenderable.html#delete" class="tsd-kind-icon">delete</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_semantic_math_editor_.matheditorrenderable.html#dropselection" class="tsd-kind-icon">drop<wbr>Selection</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_semantic_math_editor_.matheditorrenderable.html#getadvices" class="tsd-kind-icon">get<wbr>Advices</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_semantic_math_editor_.matheditorrenderable.html#getcharacterspeech" class="tsd-kind-icon">get<wbr>Character<wbr>Speech</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_semantic_math_editor_.matheditorrenderable.html#getcursor" class="tsd-kind-icon">get<wbr>Cursor</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_semantic_math_editor_.matheditorrenderable.html#getlatex" class="tsd-kind-icon">get<wbr>Latex</a></li>
@@ -2609,33 +2613,6 @@ img {
 						</ul>
 					</section>
 				</div>
-			</section>
-		</section>
-		<section class="tsd-panel-group tsd-member-group ">
-			<h2>Constructors</h2>
-			<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-				<a name="constructor" class="tsd-anchor"></a>
-				<h3>constructor</h3>
-				<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-					<li class="tsd-signature tsd-kind-icon">new <wbr>Math<wbr>Editor<wbr>Renderable<span class="tsd-signature-symbol">(</span>renderer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Renderer</span>, callbacks<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">TreeUpdateCallbacks</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_semantic_math_editor_.html#extendednotifyobject" class="tsd-signature-type">ExtendedNotifyObject</a><span class="tsd-signature-symbol">, </span><a href="../enums/_semantic_math_editor_.notifyupdateobject.html" class="tsd-signature-type">NotifyUpdateObject</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_semantic_math_editor_.matheditorrenderable.html" class="tsd-signature-type">MathEditorRenderable</a></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<p>Overrides MathEditorAPI.__constructor</p>
-						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>renderer: <span class="tsd-signature-type">Renderer</span></h5>
-							</li>
-							<li>
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> callbacks: <span class="tsd-signature-type">TreeUpdateCallbacks</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_semantic_math_editor_.html#extendednotifyobject" class="tsd-signature-type">ExtendedNotifyObject</a><span class="tsd-signature-symbol">, </span><a href="../enums/_semantic_math_editor_.notifyupdateobject.html" class="tsd-signature-type">NotifyUpdateObject</a><span class="tsd-signature-symbol">&gt;</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <a href="_semantic_math_editor_.matheditorrenderable.html" class="tsd-signature-type">MathEditorRenderable</a></h4>
-					</li>
-				</ul>
 			</section>
 		</section>
 		<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
@@ -2748,6 +2725,32 @@ img {
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<a name="applyadvice" class="tsd-anchor"></a>
+				<h3>apply<wbr>Advice</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<li class="tsd-signature tsd-kind-icon">apply<wbr>Advice<span class="tsd-signature-symbol">(</span>advice<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IAdvice</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from <a href="_semantic_math_editor_.matheditor.html">MathEditor</a>.<a href="_semantic_math_editor_.matheditor.html#applyadvice">applyAdvice</a></p>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Applies advice received from the <a href="_semantic_math_editor_.matheditorrenderable.html#getadvices">getAdvices</a> method.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>advice: <span class="tsd-signature-type">IAdvice</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -2912,6 +2915,27 @@ img {
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<a name="getadvices" class="tsd-anchor"></a>
+				<h3>get<wbr>Advices</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Advices<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IAdvice</span><span class="tsd-signature-symbol">[]</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<p>Inherited from <a href="_semantic_math_editor_.matheditor.html">MathEditor</a>.<a href="_semantic_math_editor_.matheditor.html#getadvices">getAdvices</a></p>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Returns advices for the current cursor position. Advice is a suggestion to end user what can be inserted into the current cursor position.
+								For example, if user enters &#39;in&#39; then we can suggest him &#39;Indefinite integral&#39;.</p>
+							</div>
+						</div>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IAdvice</span><span class="tsd-signature-symbol">[]</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -3126,9 +3150,11 @@ img {
 							<p>Inherited from <a href="_semantic_math_editor_.matheditor.html">MathEditor</a>.<a href="_semantic_math_editor_.matheditor.html#hasselection">hasSelection</a></p>
 						</aside>
 						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Returns whether selection exists or not.</p>
+							</div>
 						</div>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						<p>whether selection exists or not</p>
 					</li>
 				</ul>
 			</section>
@@ -3648,6 +3674,11 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Removes all decorations.</p>
+							</div>
+						</div>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 					</li>
 				</ul>
@@ -3662,6 +3693,11 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Clears the editor and remove all decorations.</p>
+							</div>
+						</div>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 					</li>
 				</ul>
@@ -3676,13 +3712,25 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Decorates math nodes inside the editor. For that, it creates an overlay element you can style.
+								The decoration is dropped if the tree changed because it becomes disconnected with new tree nodes.</p>
+							</div>
+						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5>nodeIds: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>node ids to decorate</p>
+								</div>
 							</li>
 							<li>
 								<h5>decorator: <span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>function to decorate the overlay element</p>
+								</div>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter-signature">
 										<ul class="tsd-signatures tsd-kind-type-literal">
@@ -3704,6 +3752,9 @@ img {
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> preDelete: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>hook that executes when the decoration is removed on math tree update</p>
+								</div>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter-signature">
 										<ul class="tsd-signatures tsd-kind-type-literal">
@@ -3719,12 +3770,19 @@ img {
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> withRender: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>indicates if the decoration requires rendering after creation</p>
+								</div>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> omitRedraw: <span class="tsd-signature-type">boolean</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>indicates if the decoration requires redrawing</p>
+								</div>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h4>
+						<p>handler to remove the decoration</p>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-signature">
 								<ul class="tsd-signatures tsd-kind-type-literal">
@@ -3790,6 +3848,11 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Returns ClientRect for the current cursor.</p>
+							</div>
+						</div>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ClientRect</span></h4>
 					</li>
 				</ul>
@@ -3824,6 +3887,11 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Returns ClientRect for the current selection.</p>
+							</div>
+						</div>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ClientRect</span><span class="tsd-signature-symbol">[]</span></h4>
 					</li>
 				</ul>
@@ -3839,6 +3907,9 @@ img {
 						<aside class="tsd-sources">
 						</aside>
 						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Navigates cursor vertically inside the editor.</p>
+							</div>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
@@ -3861,6 +3932,11 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Re-renders all decorations.</p>
+							</div>
+						</div>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 					</li>
 				</ul>

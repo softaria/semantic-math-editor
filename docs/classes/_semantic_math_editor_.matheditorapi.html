@@ -2376,6 +2376,9 @@ img {
 					<a href="_semantic_math_editor_.matheditorapi.html#addonupdate" class="tsd-kind-icon">add<wbr>OnUpdate</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="_semantic_math_editor_.matheditorapi.html#applyadvice" class="tsd-kind-icon">apply<wbr>Advice</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
 					<a href="_semantic_math_editor_.matheditorapi.html#applyheuristics" class="tsd-kind-icon">apply<wbr>Heuristics</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -2392,6 +2395,9 @@ img {
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
 					<a href="_semantic_math_editor_.matheditorapi.html#dropselection" class="tsd-kind-icon">drop<wbr>Selection</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-class">
+					<a href="_semantic_math_editor_.matheditorapi.html#getadvices" class="tsd-kind-icon">get<wbr>Advices</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-class">
 					<a href="_semantic_math_editor_.matheditorapi.html#getcharacterspeech" class="tsd-kind-icon">get<wbr>Character<wbr>Speech</a>
@@ -2499,7 +2505,7 @@ img {
 						It allows creation of the editor in memory and communicating with it via API.
 						It does not have ability to render. Usually it is used for the cases when one needs some calculation with the editor itself or some of its plugins.
 						Also it is useful for testing as it does not depend on DOM.
-					Please use <a href="../modules/_semantic_math_editor_.html#createapi">createAPI</a> function to create an instance of this class.</p>
+					Use <a href="../modules/_semantic_math_editor_.html#createapi">createAPI</a> function to create an instance of this class.</p>
 				</div>
 			</div>
 		</section>
@@ -2531,12 +2537,14 @@ img {
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_semantic_math_editor_.matheditorapi.html#addonnotify" class="tsd-kind-icon">add<wbr>OnNotify</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_semantic_math_editor_.matheditorapi.html#addonupdate" class="tsd-kind-icon">add<wbr>OnUpdate</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_semantic_math_editor_.matheditorapi.html#applyadvice" class="tsd-kind-icon">apply<wbr>Advice</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_semantic_math_editor_.matheditorapi.html#applyheuristics" class="tsd-kind-icon">apply<wbr>Heuristics</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_semantic_math_editor_.matheditorapi.html#copy" class="tsd-kind-icon">copy</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_semantic_math_editor_.matheditorapi.html#cut" class="tsd-kind-icon">cut</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_semantic_math_editor_.matheditorapi.html#defineeditablecell" class="tsd-kind-icon">define<wbr>Editable<wbr>Cell</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_semantic_math_editor_.matheditorapi.html#delete" class="tsd-kind-icon">delete</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_semantic_math_editor_.matheditorapi.html#dropselection" class="tsd-kind-icon">drop<wbr>Selection</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_semantic_math_editor_.matheditorapi.html#getadvices" class="tsd-kind-icon">get<wbr>Advices</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_semantic_math_editor_.matheditorapi.html#getcharacterspeech" class="tsd-kind-icon">get<wbr>Character<wbr>Speech</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_semantic_math_editor_.matheditorapi.html#getcursor" class="tsd-kind-icon">get<wbr>Cursor</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-class"><a href="_semantic_math_editor_.matheditorapi.html#getlatex" class="tsd-kind-icon">get<wbr>Latex</a></li>
@@ -2683,6 +2691,31 @@ img {
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="applyadvice" class="tsd-anchor"></a>
+				<h3>apply<wbr>Advice</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">apply<wbr>Advice<span class="tsd-signature-symbol">(</span>advice<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IAdvice</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Applies advice received from the <a href="_semantic_math_editor_.matheditorapi.html#getadvices">getAdvices</a> method.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>advice: <span class="tsd-signature-type">IAdvice</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -2841,6 +2874,26 @@ img {
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<a name="getadvices" class="tsd-anchor"></a>
+				<h3>get<wbr>Advices</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Advices<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IAdvice</span><span class="tsd-signature-symbol">[]</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Returns advices for the current cursor position. Advice is a suggestion to end user what can be inserted into the current cursor position.
+								For example, if user enters &#39;in&#39; then we can suggest him &#39;Indefinite integral&#39;.</p>
+							</div>
+						</div>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IAdvice</span><span class="tsd-signature-symbol">[]</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -3045,9 +3098,11 @@ img {
 						<aside class="tsd-sources">
 						</aside>
 						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Returns whether selection exists or not.</p>
+							</div>
 						</div>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						<p>whether selection exists or not</p>
 					</li>
 				</ul>
 			</section>

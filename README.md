@@ -1,3 +1,4 @@
+
 # semantic-math-editor
 
 [![npm](https://img.shields.io/npm/v/semantic-math-editor)](https://www.npmjs.com/package/semantic-math-editor)

@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta title="Web Editor Demo"/>
+    <meta name="viewport" content="width=device-width">
+    <title>Semantic Math Editor Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css"
+          integrity="sha256-uT5rNa8r/qorzlARiO7fTBE7EWQiX/umLlXsq7zyQP8=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <script src="./node_modules/semantic-math-editor/index.bundle.js"></script>
+
+
+</head>
+<body class="page">
+    <div class="page__container">
+        <h1 class="page__title">Semantic Math Editor Demo</h1>
+        <section>
+            <h2 class="page__subtitle">Type a math formula here</h2>
+            <div>
+                <main id="myid" class="page__input" tabindex="1" aria-label="Editor"></main>
+                <div class="page__butons">
+                    <div class="form-row">
+                        <div class="col-auto">
+                            <div class="input-group">
+                                <select class="custom-select" id="insertConstruction">
+                                    <option value='insertSqrt' selected="selected">Root</option>
+                                    <option value='insertSin'>Sinus</option>
+                                    <option value='insertLim'>Limit</option>
+                                    <!--option value='insertTransformation'>Transformation</option-->
+                                </select>
+                                <div class="input-group-append">
+                                    <input type="button" class="btn btn-sm btn-primary" onclick="insertConstruction();" value="Insert"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <input type="button" class="btn btn-sm btn-primary" onclick="openKeyboard();" value="Open virtual keyboard"/>
+                        </div>
+                        <div class="col-auto">
+                            <input type="button" class="btn btn-sm btn-primary" onclick="applyDefaultHeuristics();" value="Apply default heuristics"/>
+                        </div>
+                        <div class="col-auto">
+                            <input type="button" class="btn btn-sm btn-primary" onclick="applyAllHeuristics();" value="Apply all heuristics"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="page__subtitle">Current formula part as a text</h2>
+            <div class="page__input" id="partial-a11y"></div>
+        </section>
+        <section>
+            <h2 class="page__subtitle">Your formula internal representation</h2>
+            <div class="page__butons">
+                <div class="form-row">
+                    <div class="col-auto">
+                        <input type="button" class="btn btn-sm btn-primary" onclick="parseInternal();" value="Parse internal"/>
+                    </div>
+                    <div class="col-auto make-editable" style="visibility:hidden;">
+                        <label><input type="checkbox" id="borderVisible"/>Visible border</label>
+                    </div>
+                    <div class="col-auto make-editable" style="visibility:hidden;">
+                        <label><input type="checkbox" id="avoidParenthesesWrap"/>Avoid parentheses wrap</label>
+                    </div>
+                    <div class="col-auto make-editable" style="visibility:hidden;">
+                        <div class="input-group">
+                            <input type="text" id="nodeIndex"/>
+                            <div class="input-group-append">
+                                <input type="button" class="btn btn-sm btn-primary" onclick="setEditable();" value="set editable"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <textarea id="mysemantic" class="page__input" aria-label="Formula internal representation"></textarea>
+
+            <h2 class="page__subtitle"><span>Your formula semantic</span></h2>
+            <div class="page__butons">
+                <div class="form-row">
+                    <div class="col-auto">
+                        <input type="button" class="btn btn-sm btn-primary" onclick="validate(true);" value="Get semantic"/>
+                    </div>
+                    <div class="col-auto">
+                        <input type="button" class="btn btn-sm btn-primary" onclick="calculate();" value="Calculate"/>
+                    </div>
+                    <div class="col-auto">
+                        <input type="button" class="btn btn-sm btn-primary" onclick="showImportExportSemanticTree();" value="Import / Export"/>
+                    </div>
+                </div>
+            </div>
+            <textarea id="realsemantic" class="page__input"></textarea>
+            <h2 class="page__subtitle">Your formula as a text</h2>
+            <div class="page__butons">
+                <div class="form-row">
+                    <div class="col-auto">
+                        <input type="button" class="btn btn-sm btn-primary" onclick="speakFormula();" value="Speak formula"/>
+                    </div>
+                </div>
+            </div>
+            <div class="page__input" id="mya11y" aria-live="assertive"></div>
+        </section>
+        <section>
+            <h2 class="page__subtitle page__subtitle_valid">
+                <span id="errorstitle">Errors:</span>
+            </h2>
+            <nav id="myerrors" class="page__input page__input_big" aria-label="Errors"></nav>
+        </section>
+    </div>
+
+    <div class="modal fade" id="importExportSemanticTreeModal" tabindex="-1" role="dialog" aria-hidden="true"
+         onclick="hideImportExportSemanticTree(event)">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document" style="height: 100%">
+            <div class="modal-content" style="height: 50%">
+                <div class="modal-header">
+                    <h5 class="modal-title">Import / Export tree</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="hideImportExportSemanticTree()">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <textarea id="importExportSemanticTreeContent" style="width: 100%; height: 100%; resize: none"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-secondary" onclick="copySemanticTreeToClipboard()">Copy to clipboard</button>
+                    <button type="button" class="btn btn-sm btn-primary" onclick="importSemanticTree()">Import</button>
+                    <button type="button" class="btn btn-sm btn-primary" onclick="insertSemanticTree()">Insert at cursor</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var editor = SemanticMathEditor.createEditor(document.getElementById("myid"));
+
+        var nodeIds;
+
+        editor.addOnUpdate(function(updateInfo, confirmation){
+            document.getElementById("mysemantic").value = editor.getExpressionInternalRepresentation();
+
+            if (null != confirmation) {
+                updateConfirmOperationSpeech(confirmation);
+            } else {
+                if (updateInfo.some((o) => o === SemanticMathEditor.NotifyUpdateObject.tree)) {
+                    document.getElementById("realsemantic").innerHTML = '';
+                }
+                if (updateInfo.some((o) => o === SemanticMathEditor.NotifyUpdateObject.cursor ||
+                    o === SemanticMathEditor.NotifyUpdateObject.selection)) {
+                    updateCursorMoveSpeech();
+                }
+            }
+            
+        });
+
+        editor.addOnNotify(function(updateInfo){
+            if (updateInfo.some((o) => o === SemanticMathEditor.NotifyObject.copy)) {
+                updateCopySpeech();
+            } else if (updateInfo.some((o) => o === SemanticMathEditor.NotifyObject.inputTree)) {
+                updateInputSpeech();
+            } else if (updateInfo.some((o) => o === SemanticMathEditor.NotifyObject.nonInputTree)) {
+                updatePartialSpeech();
+            } 
+        });
+
+
+        editor.turnOnDefaultValidation(
+            document.getElementById("myerrors"),
+            {
+                noErrorsHtml: "Everything is okay!"
+            });
+
+        function setEditable() {
+                const index = document.getElementById("nodeIndex").value;
+                const borderVisible = document.getElementById("borderVisible").checked;
+                const avoidParenthesesWrap = document.getElementById("avoidParenthesesWrap").checked;
+                editor.defineEditableCell([{
+                    nodeId: nodeIds[index],
+                    borderVisible: borderVisible,
+                    avoidParenthesesWrap: avoidParenthesesWrap,
+                }]);
+            }
+
+        function updateSemanticSpeech() {
+            setA11ySpeech(editor.getSemanticSpeech());
+        }
+
+        function updateInputSpeech() {
+            setA11ySpeech(editor.speaker.getInputSpeech());
+        }
+
+        function updatePartialSpeech() {
+            setA11ySpeech(editor.speaker.getTreeUpdateSpeech());
+        }
+
+        function updateCursorMoveSpeech() {
+            setA11ySpeech(editor.speaker.getCursorMoveSpeech());
+        }
+
+        function updateCopySpeech() {
+            setA11ySpeech(editor.speaker.getCopySpeech());
+        }
+
+        function setA11ySpeech(str) {
+            if (null != str) {
+                forceSpeaker(str);
+                document.getElementById("partial-a11y").textContent = str;
+            }
+        }
+
+        function updateConfirmOperationSpeech(confirmation) {
+            setA11ySpeech(editor.speaker.getConfirmOperationSpeech(confirmation));
+        }
+
+        function forceSpeaker(text, priority) {
+            var el = document.createElement("partial-a11y-clone");
+            var id = "speak-" + Date.now();
+            el.setAttribute("id", id);
+            el.setAttribute("aria-live", priority || "polite");
+            el.classList.add("screenreader-only");
+            document.body.appendChild(el);
+
+            window.setTimeout(() => {
+                document.getElementById(id).innerHTML = text;
+            }, 50);
+
+            window.setTimeout(() => {
+                document.body.removeChild(document.getElementById(id));
+            }, 500);
+        }
+
+        function parseInternal() {
+            nodeIds = editor.setExpressionInternalRepresentation(document.getElementById("mysemantic").value);
+            document.querySelectorAll(".make-editable").forEach(div => div.style.visibility = "visible");
+        }
+
+        function speakFormula() {
+            document.getElementById("mya11y").textContent =  editor.getSemanticSpeech();
+        }
+
+        function calculate() {
+            var calculator = new SemanticMathEditor.Calculator({});
+            editor.setTree(SemanticMathEditor.acceptMathNode(editor.getTree(), calculator));
+        }
+
+        function validate() {
+            document.getElementById("realsemantic").innerHTML = editor.getSemanticSpeech();
+ 
+            editor.requestValidation();
+        }
+
+        function showImportExportSemanticTree() {
+            document.querySelector('#importExportSemanticTreeContent').value = JSON.stringify(editor.getTree(), null, '\t');
+            document.querySelector('#importExportSemanticTreeModal').classList.add('show');
+            document.querySelector('#importExportSemanticTreeModal').style.display = 'block'
+        }
+
+        function hideImportExportSemanticTree(event) {
+            if (!event || event.currentTarget === event.target) {
+                document.querySelector('#importExportSemanticTreeModal').classList.remove('show');
+                document.querySelector('#importExportSemanticTreeModal').style.display = null;
+            }
+        }
+
+        function copySemanticTreeToClipboard() {
+            document.querySelector('#importExportSemanticTreeContent').select();
+            document.execCommand('copy');
+        }
+
+        function importSemanticTree() {
+            const json = document.querySelector('#importExportSemanticTreeContent').value;
+            editor.setTree(JSON.parse(json));
+            hideImportExportSemanticTree();
+            editor.focus();
+        }
+
+        function insertSemanticTree() {
+            const json = document.querySelector('#importExportSemanticTreeContent').value;
+            editor.insertTree(JSON.parse(json));
+            hideImportExportSemanticTree();
+            editor.focus();
+        }
+        
+        function applyAllHeuristics() {
+            editor.heuristics = SemanticMathEditor.Heuristics.getAll();
+            editor.applyHeuristics();
+            editor.focus();
+        }
+        
+        function applyDefaultHeuristics() {
+            editor.heuristics = SemanticMathEditor.Heuristics.getDefault();
+            editor.applyHeuristics();
+            editor.focus();
+        }
+
+        function insertConstruction() {
+            const value = document.getElementById("insertConstruction").value;
+            switch (value) {
+                case 'insertSqrt':
+                    editor.insertTree(new SemanticMathEditor.MathSquareRoot(new SemanticMathEditor.MathPlaceholder()));
+                    editor.focus();
+                    break;
+                case 'insertSin':
+                    editor.insertTree(new SemanticMathEditor.MathTrigonometricFunction(SemanticMathEditor.MathTrigonometryType.sin,new SemanticMathEditor.MathPlaceholder()));
+                    editor.focus();
+                    break;
+                case 'insertLim':
+                    editor.insertTree(new SemanticMathEditor.MathLimit(new SemanticMathEditor.MathPlaceholder(),new SemanticMathEditor.MathPlaceholder(),new SemanticMathEditor.MathPlaceholder(),SemanticMathEditor.MathLimitType.unspecified));
+                    editor.focus();
+                    break;
+            }
+        }
+
+        function openKeyboard() {
+            SemanticMathEditor.showKeyboard(editor, true);
+        }
+    </script>
+
+</body>
+</html>
