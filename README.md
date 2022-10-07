@@ -10,7 +10,7 @@ Official site: https://math-editor.com/semanticEditor.html
 Developer Version Installation:
 
 ```
-   npm i semantic-math-editor
+   npm i semantic-math-editor@2.0.3
 ```
 
 Getting started:
